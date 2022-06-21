@@ -1,0 +1,41 @@
+body {
+    background-color:ivory;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: darkseagreen;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 50px;
+}
+.background-img {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: auto;
+    width: 50%;
+    height: 220px;   
+}
+
+.navbar {
+    display: inline-block;
+    margin-left: 10%;
+} 
+
+ul {
+    list-style-type: none;
+    float: right;
+    padding: 5px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    margin: 4px;
+    padding: 5px;
+}
