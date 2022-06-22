@@ -1,5 +1,6 @@
 body {
     background-color:ivory;
+
 }
 
 .header {
@@ -11,6 +12,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: darkseagreen;
     border-bottom: 2px solid black;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -35,9 +37,11 @@ h1 {
 
 } 
 
-ul {
+.navbar ul {
     list-style-type: none;
     float: right;
+    display: inline-flex;
+    flex-wrap: wrap;
     padding: 5px;
 }
 
@@ -61,15 +65,28 @@ ul {
     margin-right: 5%;
     width: 75%;
     flex-direction: row;
-    padding-top: 10px;
+    padding-top: auto;
     display: flex;
     align-items: row;
 }
 
+
 .column {
     flex-direction: column;
     align-items: flex-start;
+    flex-wrap: wrap;
     padding: 15px;
+   }
+
+   @media only screen and (max-width: 960px) {
+/* For mobile phones: */
+header, .row {
+      width: 100%;
+    }
+  }
+
+h2 {
+    font-size: 35px;
 }
 
 .left {
@@ -77,22 +94,113 @@ ul {
     flex-direction: column;
     width: 15%;
     border-right: solid black 3px; 
-    margin-right: 40px;   
+    padding-right: 40px;   
 }
 
 .middle {
     display: inline-block;
     width: 30%;
     margin-right: 40px;
-    margin-left: 40px;
+    margin-left: 60px;
+    padding: 5px;
+}
+
+.middle img {
+    height: 400px;
+}
+
+@media only screen and (max-width: 960px) {
+    .middle {}
+
+    .middle img {
+        width: 50px;
+        height: 100px;
+    }
 }
 
 .right {
     display: inline-block;
     width: 30%;
-    padding-left: 40px;
+    margin-left: 40px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 22px;
+    border: solid 3px;
+    border-color: seagreen;
     }
 
-.work-samples .row {
+.right h3 {
+    text-align: center;
+    }
 
+
+.row .columns-2 {
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    align-items: center;
+    padding: 50px;
+    margin: 10px;
+    padding-top: 0;
+}
+
+div .columns-2 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.columns-2 {
+    justify-content: center;
+    border: 3px solid;
+    border-color: seagreen;
+    padding: 0px;
+    height: 20%;
+}
+
+#main-column:hover{
+    box-shadow: 2px;
+    height: 50%;
+    width: 50%;
+    display: overflow;
+}
+
+.columns-2 img {
+    width: 100%;
+    height: 50%;
+}
+
+.columns-2 h3 {
+    text-align: center;
+    font-size: 23px;
+    padding: 0px;
+}
+
+.columns-2 p {
+    font-size: 18px;
+    display: block;
+}
+
+.contact ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.contact ul li {
+    display: inline-block;
+    }
+
+.contact ul li a {
+    padding: 5px;
+    margin: 5px;
+}
+
+li a img {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+li h3 {
+    padding-left: 40px;
+    padding-right: 40px;
 }
