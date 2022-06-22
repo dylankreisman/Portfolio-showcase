@@ -3,26 +3,36 @@ body {
 }
 
 .header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     padding: 20px;
+    padding-bottom: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: darkseagreen;
+    border-bottom: 2px solid black;
 }
 
 h1 {
     display: inline-block;
     font-size: 50px;
 }
+
+
 .background-img {
     display: inline-block;
-    margin-left: 30px;
-    margin-right: auto;
+    margin-left: 80px;
+    margin-right: 80px;
     width: 50%;
     height: 220px;   
+    border-radius: 5%;
 }
 
 .navbar {
     display: inline-block;
-    margin-left: 10%;
+    padding-right: 2px;
+    margin-left: 20px;
+
 } 
 
 ul {
@@ -38,4 +48,51 @@ ul {
 .navbar li a {
     margin: 4px;
     padding: 5px;
+    font-size: 25px;
+    color:black;
+}
+
+.navbar li a:hover {
+    background-color: seagreen;
+}
+
+.row {
+    margin-left: 15%;
+    margin-right: 5%;
+    width: 75%;
+    flex-direction: row;
+    padding-top: 10px;
+    display: flex;
+    align-items: row;
+}
+
+.column {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.left {
+    display: inline-block;
+    flex-direction: column;
+    width: 15%;
+    border-right: solid black 3px; 
+    margin-right: 40px;   
+}
+
+.middle {
+    display: inline-block;
+    width: 30%;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.right {
+    display: inline-block;
+    width: 30%;
+    padding-left: 40px;
+    }
+
+.work-samples .row {
+
 }
