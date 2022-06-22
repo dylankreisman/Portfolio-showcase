@@ -2,7 +2,7 @@ body {
     background-color:ivory;
 
 }
-
+/* header section with nav*/
 .header {
     justify-content: center;
     align-items: center;
@@ -60,6 +60,7 @@ h1 {
     background-color: seagreen;
 }
 
+/* beginning of main content section starting with rows*/
 .row {
     margin-left: 15%;
     margin-right: 5%;
@@ -70,7 +71,7 @@ h1 {
     align-items: row;
 }
 
-
+/* Mixture of columns that share the same class and ones that identify in corresponding areas*/
 .column {
     flex-direction: column;
     align-items: flex-start;
@@ -158,6 +159,7 @@ div .columns-2 {
     height: 20%;
 }
 
+/*The hover feature for the first column in my work section*/
 #main-column:hover{
     box-shadow: 2px;
     height: 50%;
